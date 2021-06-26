@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-container {
+  align-items: baseline;
+  margin: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.App-container .column{
+  width: 50%;
+  display: block;
+}
+
+.flat-table {
+  margin-bottom: 20px;
+  width: 80%;
+  border-collapse:collapse;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+.flat-table th, .flat-table td {
+  box-shadow: inset 0 -1px rgba(0,0,0,0.25), 
+    inset 0 1px rgba(0,0,0,0.25);
+}
+.flat-table th {
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  padding: 1em;
+  color: rgb(202, 214, 255);
+  font-size: 1.3em;
+}
+.flat-table td {
+  color: #f7f7f7;
+  padding: 0.7em 1em 0.7em 1.15em;
+  text-shadow: 0 0 1px rgba(255,255,255,0.1);
+  font-size: 1.2em;
+}
+.flat-table tr {
+  -webkit-transition: background 0.3s, box-shadow 0.3s;
+  -moz-transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.flat-table-1 {
+  background: #336ca6;
+}
+.flat-table-1 tr:hover {
+  background: rgba(0,0,0,0.19);
+}
+
+.App-form{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.App-form input{
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1.3em;
+  margin: 5px;
+}
+
+.App-form input:focus{
+  outline: 0;
+}
+
+.btn{
+  font-size: 1em;
+  width: 150PX;
+  align-self: center;
+  margin: 5px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.btn-Submit{
+  background-color: rgb(18, 168, 68);
+  height: 50px;
+  width: 250PX;
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 1.2em;
+  color: white;
+  margin-top: 20px;
+  align-self:center;
+}
+
+.btn-Cancel{
+  background-color: rgb(194, 31, 26);
+  height: 50px;
+  width: 250PX;
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 1.2em;
+  color: white;
+  margin-top: 20px;
+  align-self:center;
+}
+
+.btn-Editar{
+  background-color: rgb(134, 207, 255);
+}
+
+.btn-Eliminar{
+  background-color: rgb(216, 252, 132);
+}
+
